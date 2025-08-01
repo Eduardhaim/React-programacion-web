@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Calificación Final</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card shadow">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Calculadora de Calificación Final</h3>
+        <form id="notaForm">
+          <div class="mb-3">
+            <label for="nota1" class="form-label">1.er Parcial (máx. 30 pts):</label>
+            <input type="number" id="nota1" class="form-control" min="0" max="30" placeholder="Ingrese nota del 1.er parcial">
+          </div>
+          <div class="mb-3">
+            <label for="nota2" class="form-label">2.º Parcial (máx. 30 pts):</label>
+            <input type="number" id="nota2" class="form-control" min="0" max="30" placeholder="Ingrese nota del 2.º parcial">
+          </div>
+          <div class="mb-3">
+            <label for="nota3" class="form-label">3.er Parcial (máx. 40 pts):</label>
+            <input type="number" id="nota3" class="form-control" min="0" max="40" placeholder="Ingrese nota del 3.er parcial">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Resultado:</label>
+            <p id="resultado" class="form-control-plaintext bg-light border rounded px-3 py-2">--</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Calcular</button>
+            <button type="button" id="limpiarBtn" class="btn btn-secondary">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
